@@ -15,7 +15,7 @@ const generatePassword = () => {
   if (symbols.checked) data.push(...dataSymbols);
 
   if (data.length === 0) {
-    alert("Veuillez séléctionner des critères !");
+    alert("Please select criteria !");
     return;
   }
   for (i = 0; i < rangeValue.value; i++) {
@@ -27,10 +27,10 @@ const generatePassword = () => {
   document.execCommand("copy");
   window.getSelection().removeAllRanges();
 
-  generateButton.textContent = "Copié !";
+  generateButton.textContent = "Copied !";
 
   setTimeout(() => {
-    generateButton.textContent = "Générer mot de passe";
+    generateButton.textContent = "Generate password";
   }, 3000);
 };
 
